@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <style>
+        .calculator-box{
+            width: 320px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .input-row, .btn-row, .result-row{
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        input{
+            width: 80%;
+            padding: 8px;
+            font-size: 18px;
+        }
+
+        button{
+            width: 50px;
+            height: 40px;
+            font-size: 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #result{
+            width: 80%;
+            padding: 8px;
+            font-size: 18px;
+            background: #e5e5e5;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator-box">
+    
+    <h3 style="text-align:center;">Arithmetic Operation</h3>
+    <form name="myform" style="border: 2px double #191818; "
+
+    <!-- First Number -->
+    <div class="input-row">
+        <input type="number" id="num1" placeholder="Enter Number 1">
+    </div>
+
+    <!-- Second Number -->
+    <div class="input-row">
+        <input type="number" id="num2" placeholder="Enter Number 2">
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-row">
+        <button class="btn-danger" type="button" onclick="calc('+')">+</button>
+        <button class="btn-danger" type="button" onclick="calc('-')">-</button>
+        <button  class="btn-danger" type="button" onclick="calc('*')">*</button>
+        <button class="btn-danger" type="button" onclick="calc('/')">/</button>
+          <button class="btn-danger" type="reset"> reset </button>
+    </div>
+
+    <!-- Result -->
+    <div class="result-row">
+        <input type="text" id="result" placeholder="Result" readonly>
+         <input type="number" name="res" class="form-control" disabled>
+    </div>
+</div>
+
+<script>
+    function calc(op){
+        let n1 = parseFloat(document.getElementById("num1").value);
+        let n2 = parseFloat(document.getElementById("num2").value);
+        let res = "";
+
+        if(op === '+') res = n1 + n2;
+        if(op === '-') res = n1 - n2;
+        if(op === '*') res = n1 * n2;
+        if(op === '/') res = n2 !== 0 ? n1 / n2 : "Error";
+
+        document.getElementById("result").value = res;
+    }
+</script>
+
+</body>
+</html>

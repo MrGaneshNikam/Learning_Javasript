@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    <!-- syntax- funct functName(){
+        statement;
+    }
+    functName(); -->
+<script>
+    function hello(){
+        document.write("hello everyone, how are you "+ "<br>");
+    }
+    hello();
+    hello();
+</script>
+<!-- 
+syntax- funct functName(parameter 1 , parameter 2){
+        statement;
+    }
+    functName(argument 1 ,argument2);  -->
+    <script>
+        function sum(a,b,c){
+            document.write(a+b+c + "<br> <br>");
+        }
+        sum(23,23,45);
+        sum(132,123,234);
+    </script> 
+
+    <script>
+        function sub(a,b,c){
+            document.write(a-b-c + "<br> <br>");
+        }
+        sub(23,23,45);
+        sub(132,123,234);
+    </script>
+
+    <script>
+        const sum = (a,b,c)=>document.write(a+b+c + "<br> <br>");
+        sum(23,23,45);
+        sum(132,123,234);
+        </script>
+
+</body>
+</html>
