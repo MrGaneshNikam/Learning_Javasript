@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //modify or update  and delete
+         var a= ["ganesh",25,"male","software engineer"];
+         document.write(a + "<br>");
+
+         a[1]=28;
+         document.write(a + "<br>");
+         delete a[3];
+          document.write(a + "<br>");
+</script>
+
+<script>
+    //sorting and  reverse
+      var a = ["ganesh","amol","anish","aniket","prasad","rohit"]
+      document.write(a + "<br>");
+      a.sort();
+      document.write(a + "<br>");
+      a.reverse();
+      document.write(a + "<br>");
+</script>
+
+<script>
+    // pop and push
+      document.write("<h2>push and pop ex </h2>");
+      var a= ["ganesh","amol","anish","aniket","prasad","rohit"];
+       document.write(a + "<br>");
+       a.pop();
+        a.pop();
+        document.write(a + "<br>");
+        a.push("akash");
+        a.push("akshda");
+        document.write(a + "<br>");
+</script>
+
+<script>
+    //shift and unshift pop
+    document.write("<h2>shift pop unshift </h2>");
+      var a= ["ganesh","amol","anish","aniket","prasad","rohit"];
+       document.write(a + "<br>");
+       a.shift();
+        a.shift();
+        document.write(a + "<br>");
+         a.unshift("ganesh");
+        a.shift("amol");
+        document.write(a + "<br>");
+</script>
+
+<script>
+    //concat and joint
+    document.write("<h2>contact and join</h2>");
+    var a= ["ganesh","amol","anish","aniket","prasad","rohit"]
+    var b= ["ganesh","amol","anish","aniket"];
+    var x=["abhi","kunal"];
+
+    var c = a.concat(b,x)
+    </script>
+</body>
+</html>
