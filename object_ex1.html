@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object example</title>
+</head>
+<body>
+    <script>
+        var a = {
+            fname : 'Ganesh',
+            lname : 'nikam',
+            age : '23',
+            email : 'nikamganesh7083@gmail.com',
+            players : ['dhoni','sachin','rohit','virat'], //array in object
+            address : {
+                'city' : 'satara',
+                'country' : 'india',
+
+            },
+            phone:7083890547,
+            message : "today is holiday"
+        }
+        document.write("this is " + a.fname + "<br>" + "my surname is "+ a.lname + "<br>");
+         document.write("my email is " + a.email + "<br>");
+          document.write("my fav player" + a.players[0] + "<br>" + "my address is" + a.address.city + "<br>"); 
+
+    </script>
+
+    <script>
+        var emp = {
+            empid : 1001,
+            empname : 'ganesh',
+            empsalary : 60000,
+            empdesignation : 'software engineer',
+            teammates : ['anish','aniket','prasad'],
+            address : {
+                'city' : 'satara',
+                'country' : 'india',
+
+            },
+            phone:7083890547,
+             message : "today is meeting day be present on time"
+        }
+
+        document.write(emp.empid + "<br>" + emp.empname);
+         document.write(emp.empdesignation + "<br>");
+          document.write( emp.teammates[2] + "<br>" + "my address is" + emp.address.city + "<br>");    
+    </script>
+
+    <script>
+        var student = [
+            {name : 'Ganesh', age : 21, address : 'satara'},
+            {name : 'anish', age : 22, address : 'kolhapur'},
+            {name : 'aniket', age : 23, address : 'pune'},
+            {name : 'prasad', age : 22, address : 'nashik'},
+            {name : 'akash', age : 21, address : 'mumbai'},
+            
+        ];
+        console.log(student);
+        for(let a=o; a<student.length++){
+          document.write([a].name + [a].age + [a].address + "<br>");
+        }
+    </script>
+</body>
+</html>
