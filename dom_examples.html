@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom examples</title>
+</head>
+<body>
+    <!-- example 1  -->
+     <h1>change text using dom </h1>
+     <h2 id="title">old heading</h2>
+     <button onclick = "changetext()">change text</button>
+     <hr>
+     <!-- example2 -->
+    <h1>change style color using dom</h1>
+    <img src="images/cake 01.jpg" id="myimg" width="300"/>
+      <h2 id="msg">hello its ganesh</h2>
+      <button onclick="changecolor()">change color</button>
+      <hr>
+
+       <!-- example 3
+    <h1>change img  using dom</h1>
+    <img src="images/cake 01.jpg" id="myimg" width="300"/>
+      <h2 id="myimg">hello its ganesh</h2>
+      <button onclick="changeImage()">change img</button>
+      <hr> -->
+
+
+      <h2>welcome to my website</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sapiente quos veniam vitae in quam autem eos! Expedita odio corporis veniam ab dolore aliquid ea, pariatur nemo, obcaecati sit nobis.
+      Exercitationem numquam quidem amet libero iusto quos, expedita dolores dolorem pariatur eum quis autem sapiente vel labore, cum distinctio deleniti? Amet omnis quod doloremque quisquam quam unde eius sed minima?
+      Quasi repudiandae perferendis eveniet asperiores totam unde laudantium ipsa debitis obcaecati animi? Laboriosam iste nobis voluptate iusto blanditiis ipsum et non illum amet? Maxime beatae tempora, dolorem aperiam quos fuga?</p>
+      <style>
+        body{
+            background-color: white;
+            color: black;
+            transition: 0.5s;
+        }
+        .dark-mode{
+            background-color: black;
+            color: white;
+        }
+      </style>
+
+       <!-- example4 -->
+    <h1>input from user</h1>
+    <input type="text" id="nameInput" placeholder="enter name"/>
+      <button onclick="showName()">submit</button>
+
+      <h1 style="color: red;" id="output"></h1>
+      <hr>
+
+      <h1>delet line</h1>
+      <p id="deletMe">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, corrupti totam cumque architecto delectus nesciunt debitis cupiditate molestias deserunt, ratione iure, quam modi ea temporibus ipsa. Sapiente magnam quaerat magni.</p>
+      <button onclick="removePara()"{
+         document.getElementById('deletMe').remove();
+      }
+
+      
+
+    <script>
+        function changeImage(){
+            document.getElementById('myimg'.src = 'images/cake02.jpg');
+        }
+        </script> 
+
+    <script>//ex 2 color
+        function changecolor(){
+            document.getElementById('msg').style.color = 'blue';
+        }
+    </script>
+
+    <script>//ex 1 inner html 
+        function changetext(){
+            document.getElementById('title').innerHTML = "new heading"
+        }
+     </script>
+
+
+<script> 
+    let size = 16;
+     function increase(){
+        size++;
+        document.getElementById('para1').style.fontSize = size + 'px';
+     }
+       function decrease(){
+        size--;
+        document.getElementById('para1').style.fontSize = size + 'px';
+     }
+</script>
+
+
+</body>
+</html>
