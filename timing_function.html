@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing function</title>
+</head>
+<body>
+    <h2>Digital clock</h2>
+    <h2 id="clock"></h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente assumenda quaerat blanditiis doloribus odit. Quod illum iste laudantium, voluptatibus numquam, nobis, esse vitae perspiciatis doloribus earum enim vero voluptas similique!</p>
+
+    <script> 
+    let count 
+
+    <script>
+        function showTime(){
+            let now = new Date();
+
+            let time = now.toLocaleTimeString();
+
+            document.getElementById("clock").innerHTML = time;
+            setInterval(showTime,1000);
+        }
+        showTime();
+    </script>
+
+    <script>
+        function (setTimeout (){
+            document.getElementById("msg").innerHTML = "hello its ganesh";
+        },10000
+    </script>
+
+
+</body>
+</html>
